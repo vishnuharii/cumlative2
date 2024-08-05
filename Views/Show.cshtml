@@ -1,0 +1,16 @@
+﻿﻿@model cumulative2.Models.Teacher
+@{
+    ViewBag.Title = "Show";
+}
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/Teacher/List">Back To Teachers</a>
+        <a class="dellink" href="/Teacher/DeleteConfirm/@Model.Id">Delete</a>
+        <a class="navlink" href="/Teacher/Update/@Model.Id">Update</a>
+    </nav>
+    <h2>@Model.TfName @Model.TlName</h2>
+    <p style="font-style:italic;">Member Since @Model.Thiredate.ToString("dd-MMM-yyyy")</p>
+    <p>@Model.Tsalary</p>
+    <p>@Model.Tnumber</p>
+</div>
